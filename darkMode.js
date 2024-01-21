@@ -37,5 +37,6 @@ function updateDarkMode(isDarkMode) {
   });
   const body = document.body;
   body.classList.toggle("dark-mode", isDarkMode);
-
+  
 }
+

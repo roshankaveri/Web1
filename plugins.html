@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.4/examples/album/ -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v3.8.6" />
+    <title>Hmmbo | Developer</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.4/examples/album/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="https://getbootstrap.com/docs/4.4/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="manifest"
+      href="https://getbootstrap.com/docs/4.4/assets/img/favicons/manifest.json"
+    />
+    <link
+      rel="mask-icon"
+      href="https://getbootstrap.com/docs/4.4/assets/img/favicons/safari-pinned-tab.svg"
+      color="#563d7c"
+    />
+    <link
+      rel="icon"
+      href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon.ico"
+    />
+    <meta
+      name="msapplication-config"
+      content="/docs/4.4/assets/img/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#563d7c" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body > main > div.album.py-5.bg-light > div > div > div:nth-child(1) > div:hover {
+        transform: scale(1.05);
+    }
+    body{
+        background-color: rgb(245, 245, 245);
+    }
+
+    </style>
+  </head>
+
+  <body cz-shortcut-listen="true">
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a
+            href="/"
+            class="navbar-brand d-flex align-items-center"
+          >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              ></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+            <strong>Plugins</strong>
+          </a>
+          <a
+            href="/index.html">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-up" viewBox="0 0 16 16">
+            <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z"/>
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 1 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.707l1.5-1.5a.5.5 0 0 1 .708 0Z"/>
+          </svg>
+          </button>
+        </a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <div class="px-4 py-5 my-0 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="57" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+  <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z"/>
+  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 1 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.707l1.5-1.5a.5.5 0 0 1 .708 0Z"/>
+</svg>
+        <h1 class="display-5 fw-bold">Popular And Maintained Plugins</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">These plugins are designed with a primary focus on specific functionalities and will be regularly maintained to ensure optimal performance and compatibility.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          </div>
+        </div>
+      </div>
+      
+      <div class="album py-0 bg-light"  >
+        <div  class="moode">
+        <div class="container" >
+          <div class="row">
+
+
+
+            <div class="col-md-4"   >
+              <div class="card mb-4 shadow-sm">
+                <img src="https://cdn.discordapp.com/attachments/1118592803472150539/1191439051375521932/2024_BR_1000x1000.png?ex=65b7e615&is=65a57115&hm=c0ae16b61475fcd11519acc091ab86b66ac42922ac2e7e32afaa74e0f61dd3d1&"class="bd-placeholder-img card-img-top" width="100%">
+                
+                  <title>Placeholder</title>
+                  <br/>
+                  <rect width="100%" height="100%" fill="#55595c" ></rect>
+                  <text x="150%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 20px; font-weight: 500;">
+                        Mine X Farm Regen
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Block regeneration plugin, completly configure block regneration in game using gui's
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                        <a href="./jar/Mine_X_Farm_Regen_5.2.0.jar" download="Mine_X_Farm_Regen_5.2.0.jar">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Download
+                      </button>
+                      </a>
+                    </div>
+                    <small class="text-muted">1.17+</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="col-md-4"  style="transition: transform 0.3s ease-in-out;">
+                <div class="card mb-4 shadow-sm">
+                  <img src="https://cdn.discordapp.com/attachments/1118592803472150539/1191434143314235452/2024_BR.png?ex=65b7e183&is=65a56c83&hm=602816ee9710c2743b9b2391c9ec3e7ea6f6f23cef01d749288e059af30c2462&"class="bd-placeholder-img card-img-top" width="100%">
+                  
+                    <title>Placeholder</title>
+                    <br/>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="150%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 20px; font-weight: 500;">
+                          Ultimate BlockRegen
+                    </text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                      Premium version of Mine X Farm Regen, packed with per Region Regneration and many more features
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group">
+                        <a href="https://www.spigotmc.org/resources/ultimate-blockregen.110552/" target="_blank">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Purchase
+                        </button>
+                    </a>
+                      </div>
+                      <small class="text-muted">1.17+</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"  style="transition: transform 0.3s ease-in-out;">
+                <div class="card mb-4 shadow-sm">
+                  <img src="https://media.discordapp.net/attachments/1165481652848447498/1198610629376872498/20231227_112449.jpg?ex=65bf8823&is=65ad1323&hm=ae59b81d7453e4ddab95d61df957f29bbc3a6db67403f697da9b05fe4addf59c&=&format=webp&width=467&height=467"class="bd-placeholder-img card-img-top" width="100%">
+                  
+                    <title>Placeholder</title>
+                    <br/>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="150%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 20px; font-weight: 500;">
+                          Modify Brush Drops
+                    </text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                      Customize drop after brushing suspicious sand and gravel, custom enchants , name and lore supported.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group">
+                        <a href="./jar/Modify_BrushDrops1.0.jar" download="Modify_BrushDrops1.0.jar">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Download
+                        </button>
+                    </a>
+                      </div>
+                      <small class="text-muted">1.20</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="px-4 py-5 my-0 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="57" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                </svg>
+            <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z"/>
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 1 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.707l1.5-1.5a.5.5 0 0 1 .708 0Z"/>
+                 </svg>
+                <h1 class="display-5 fw-bold">Other Plugins</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead mb-4">These plugins, once created, may lack ongoing updates, potentially resulting in diminished performance and compatibility over time.</p>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"  style="transition: transform 0.3s ease-in-out;">
+                <div class="card mb-4 shadow-sm">
+                  <img src="https://media.discordapp.net/attachments/1165481652848447498/1198610629657886750/20231101_131735.jpg?ex=65bf8823&is=65ad1323&hm=b9cc0ad54bf0101350d7b70f5cdbcd49d590b1c5c12a42d3314a4a28c03e9dfb&=&format=webp&width=467&height=467"class="bd-placeholder-img card-img-top" width="100%">
+                  
+                    <title>Placeholder</title>
+                    <br/>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="150%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 20px; font-weight: 500;">
+                         ResourcePack Hub
+                    </text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        Ensure that your Minecraft server remains hidden until players have the necessary resource pack.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group">
+                        <a href="./jar/Rp_Hub.jar" download="Rp_Hub.jar">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Download
+                        </button>
+                    </a>
+                      </div>
+                      <small class="text-muted">1.17+</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"  style="transition: transform 0.3s ease-in-out;">
+                <div class="card mb-4 shadow-sm">
+                  <img src="https://cdn.discordapp.com/attachments/1165481652848447498/1198618476676390952/20240121_185135.jpg?ex=65bf8f72&is=65ad1a72&hm=e02141dd52650a3e540e0dc6e8c8350736ab79aab2a465ec0ffbd945604ae365&"class="bd-placeholder-img card-img-top" width="100%">
+                  
+                    <title>Placeholder</title>
+                    <br/>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="150%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 20px; font-weight: 500;">
+                          No Wood Stripping
+                    </text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        The core functionality of No Log Strip is to prohibit players from stripping woods in Minecraft.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group">
+                        <a href="./jar/No_Wood_Stripping-1.1.jar" download="No_Wood_Stripping-1.1.jar">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Download
+                        </button>
+                    </a>
+                      </div>
+                      <small class="text-muted">1.20</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"  style="transition: transform 0.3s ease-in-out;">
+                <div class="card mb-4 shadow-sm">
+                  <img src="https://cdn.discordapp.com/attachments/1165481652848447498/1198620322191122512/20240121_185648.jpg?ex=65bf912a&is=65ad1c2a&hm=4b0117bc18ad54cab61a0df8e6f269ca2a5646b03a2f03f800ab947f82983baf&"class="bd-placeholder-img card-img-top" width="100%">
+                  
+                    <title>Placeholder</title>
+                    <br/>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="150%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 20px; font-weight: 500;">
+                         GiveAll
+                    </text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        Give the Item you are holding to the whole Server! Including NBT data of the itemstack.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group">
+                        <a href="./jar/GiveAll_1.0.jar" download="GiveAll_1.0.jar">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Download
+                        </button>
+                        </a>
+                      </div>
+                      <small class="text-muted">1.20</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"  style="transition: transform 0.3s ease-in-out;">
+                <div class="card mb-4 shadow-sm">
+                  <img src="https://media.discordapp.net/attachments/1165481652848447498/1198610629955702838/20221024_105620.jpg?ex=65bf8823&is=65ad1323&hm=5ddb14f1602daf5707fc86da0437c7bfa5a5d3061411aee9159d2de948e912ae&=&format=webp&width=467&height=467"class="bd-placeholder-img card-img-top" width="100%">
+                  
+                    <title>Placeholder</title>
+                    <br/>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="150%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 20px; font-weight: 500;">
+                         BlackList Names
+                    </text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        BlackList some names to join, specially names with curse words or raids server tags.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group">
+                        <a href="./jar/blacklist-1.0.jar" download="blacklist-1.0.jar">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Download
+                        </button>
+                        </a>
+                      </div>
+                      <small class="text-muted">1.18+</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"  style="transition: transform 0.3s ease-in-out;">
+                <div class="card mb-4 shadow-sm">
+                  <img src="https://cdn.discordapp.com/attachments/1165481652848447498/1198621419802722424/20240121_190231.jpg?ex=65bf922f&is=65ad1d2f&hm=6559148db4d28c236a7a3f048129ff404a824f45b6e48125d0800ffc04ea3c28&"class="bd-placeholder-img card-img-top" width="100%">
+                  
+                    <title>Placeholder</title>
+                    <br/>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="150%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 20px; font-weight: 500;">
+                         KitGUI
+                    </text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        Kit Plugin with cool gui , its simple with customisable kit arrangements in gui using kit weight and allowed index's
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Soon
+                        </button>
+                      </div>
+                      <small class="text-muted">1.17+</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <link rel="stylesheet" href="darkMode.css">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-3 py-5 mt-5 mx-0 border-top">
+        <div class="col mb-1">
+          <a href="https://www.youtube.com/watch?v=bc8Hu_usaFU" target="_blank" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <span class="foot">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+              <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+            </svg>
+          </span>
+          </a>
+          <p class="text-body-secondary"><span class="foot"><span>©Hmmbo 2023</span></p>
+          <div class="darkModeContainer">
+            <label class="darkModeLabel">Dark Mode:</label>
+            <label class="darkModeSwitch">
+              <input type="checkbox" id="modeToggle" onclick="toggleDarkMode()" />
+              <span class="darkModeSlider"></span>
+            </label>
+          </div>
+        </div>
+        <script src="darkMode.js"></script>
+        <div class="col mb-1">
+    
+        </div>
+    
+        <div class="col mb-1">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://kofi.hmmbo.fun/"  target="_blank" class="nav-link p-0 text-body-secondary"><span class="foot"><span>KoFi</span></a></li>
+            <li class="nav-item mb-2"><a href="https://www.instagram.com/hmmboyt/" target="_blank" class="nav-link p-0 text-body-secondary"><span class="foot"><span>Instagram</span></a></li>
+            <li class="nav-item mb-2"><a href="https://yt.hmmbo.fun/" target="_blank" class="nav-link p-0 text-body-secondary"><span class="foot"><span>Youtube</span></a></li> 
+            <li class="nav-item mb-2"><a href="https://discord.gg/UcsJEtTvQj" target="_blank" class="nav-link p-0 text-body-secondary"><span class="foot"><span>Discord</span>
+              <li class="nav-item mb-2"><a href="https://twitter.com/HmmboYT" target="_blank" class="nav-link p-0 text-body-secondary"><span class="foot"><span>Twitter</span></a></li> 
+            </a></li>
+          </ul>
+        </div>
+      </footer>
+</html>
